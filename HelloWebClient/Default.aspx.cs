@@ -19,7 +19,7 @@ namespace HelloWebClient
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            HelloService1Client client = new HelloService1Client("BasicHttpBinding_IHelloService1");
+            HelloServiceClient client = new HelloServiceClient("BasicHttpBinding_IHelloService");
             var message = client.GetMessage(TextBox1.Text);
             Label1.Text = message;
         }

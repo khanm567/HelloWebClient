@@ -12,40 +12,40 @@ namespace HelloWebClient.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IHelloService1")]
-    public interface IHelloService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IHelloService")]
+    public interface IHelloService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHelloService1/GetMessage", ReplyAction="http://tempuri.org/IHelloService1/GetMessageResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHelloService/GetMessage", ReplyAction="http://tempuri.org/IHelloService/GetMessageResponse")]
         string GetMessage(string name);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHelloService1/GetMessage", ReplyAction="http://tempuri.org/IHelloService1/GetMessageResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHelloService/GetMessage", ReplyAction="http://tempuri.org/IHelloService/GetMessageResponse")]
         System.Threading.Tasks.Task<string> GetMessageAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IHelloService1Channel : HelloWebClient.ServiceReference1.IHelloService1, System.ServiceModel.IClientChannel {
+    public interface IHelloServiceChannel : HelloWebClient.ServiceReference1.IHelloService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class HelloService1Client : System.ServiceModel.ClientBase<HelloWebClient.ServiceReference1.IHelloService1>, HelloWebClient.ServiceReference1.IHelloService1 {
+    public partial class HelloServiceClient : System.ServiceModel.ClientBase<HelloWebClient.ServiceReference1.IHelloService>, HelloWebClient.ServiceReference1.IHelloService {
         
-        public HelloService1Client() {
+        public HelloServiceClient() {
         }
         
-        public HelloService1Client(string endpointConfigurationName) : 
+        public HelloServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public HelloService1Client(string endpointConfigurationName, string remoteAddress) : 
+        public HelloServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public HelloService1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public HelloServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public HelloService1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public HelloServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
